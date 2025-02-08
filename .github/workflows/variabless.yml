@@ -5,9 +5,7 @@ on: [push]
 jobs:
   var-job:
    runs-on: ubuntu-latest
-   env:
-     MY_VAR: "Hello World"
-
+   
    steps:
      - name: Print var
-       run: echo "value of my variable is $MY_VAR"
+       run: echo "My app environment is  ${{ var.APP_ENV }}"
