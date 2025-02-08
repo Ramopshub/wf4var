@@ -8,4 +8,4 @@ jobs:
    
    steps:
      - name: Print var
-       run: echo "My app environment is  ${{ var.APP_ENV }}"
+       run: echo "My app environment is  ${{ vars.APP_ENV }}"
